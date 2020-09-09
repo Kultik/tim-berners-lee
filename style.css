@@ -1,0 +1,146 @@
+
+/* TOPS */
+
+/* FONTS
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-size: 1.6rem;
+    margin: auto;
+    margin-top: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(153, 153, 153);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*  HEADER  */
+
+header {
+   
+    width: 60rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 3rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1)
+}
+
+.tim-berners {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 5px solid #EBEBEB;
+}
+
+header h1 {
+    color: rgb(245, 66, 66);
+    font-weight: 900;
+    margin-bottom: 1rem;;
+}
+
+header h3 {
+    font-size: 2.1rem;
+    margin-bottom: 1.8rem;
+}
+
+header p {
+    line-height: 1.8;
+}
+
+.buttons {
+margin: 1.5rem;
+background: lightcoral;
+padding: 1rem 2rem;
+border-radius: 0.5rem;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* GRID-MASTER */
+/* SOCIAL */
+
+.social {
+    background: #fff;
+    width: 60rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 8rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    color: rgb(153, 153, 153);
+}
+
+.social li {
+    scale:140%;
+    gap:0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GRIDGRIDGRIDGRIDGRIDGRIIIIID */
+
+.movies {
+    background: #fff;
+    width: 60rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 8rem;
+
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    color: rgb(153, 153, 153);
+}
+
+#bound {
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.space-odyssey {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  
+
+
+}
+
