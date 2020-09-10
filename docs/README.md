@@ -18,6 +18,7 @@ Démarrage au terminal, process au travers de l'éditeur et cloture dans le term
 ## Qui ?
 
 You're asking who Sir TBL is ? Really ?!
+[Help yourself.](https://fr.wikipedia.org/wiki/Tim_Berners-Lee)
 
 ### Addendum
 
