@@ -9,7 +9,7 @@
 */
 
 html {
-    font-size: 62.5%;
+    font-size: 70%;
 }
 
 * {
@@ -19,11 +19,13 @@ html {
 } 
 
 body {
+    background-color: rgb(211, 211, 211);
+    
     font-size: 1.6rem;
     margin: auto;
     margin-top: 4rem;
     font-family: 'Open Sans', sans-serif;
-    color: rgb(153, 153, 153);
+    color: rgb(135, 134, 134);
 }
 
 ul {
@@ -33,8 +35,8 @@ ul {
 /*  HEADER  */
 
 header {
-   
-    width: 60rem;
+    /* width: 60rem; !!! Leaving a FIXED - WIDTH will prevent words from auto-scaling and wrap depending on zoom*/
+    max-width: 60rem;
     margin: 0 auto;
     margin-top: 5rem;
     padding: 3rem;
@@ -43,10 +45,11 @@ header {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: justify;
 
-    background: #fff;
+    background: white;
     border-radius: 1rem;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 0 10px 0 rgba(29, 27, 27, 0.1);
 }
 
 .tim-berners {
@@ -59,7 +62,7 @@ header {
 header h1 {
     color: rgb(245, 66, 66);
     font-weight: 900;
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
 }
 
 header h3 {
@@ -85,7 +88,7 @@ font-weight: bold;
 /* SOCIAL */
 
 .social {
-    background: #fff;
+    background: white;
     width: 60rem;
     margin: 0 auto;
     margin-top: 2rem;
@@ -97,8 +100,7 @@ font-weight: bold;
     align-items: center;
 
     border-radius: 1rem;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-    color: rgb(153, 153, 153);
+    box-shadow: 0 0 10px 0 rgba(29, 27, 27, 0.1);    color: rgb(153, 153, 153);
 }
 
 .social li {
@@ -110,37 +112,71 @@ font-weight: bold;
     justify-content: center;
 }
 
-/* GRIDGRIDGRIDGRIDGRIDGRIIIIID */
+/* GRIDGRIDGRIDGRIDGRIDGRIIIIID&FLEXFLEXFLEX */
 
 .movies {
     background: #fff;
-    width: 60rem;
+    max-width: 60rem;
     margin: 0 auto;
     margin-top: 2rem;
-    padding: 8rem;
+    margin-bottom: 2rem;
+    padding: 7rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     display:flex;
     flex-direction:column;
     align-items: center;
+    gap: 2rem;
 
     border-radius: 1rem;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-    color: rgb(153, 153, 153);
+    box-shadow: 0 0 10px 0 rgba(29, 27, 27, 0.1);    color: rgb(153, 153, 153);
 }
 
 #bound {
-    
-    justify-content: center;
-    align-items: center;
-    
+    /*No need for FLEX here, it tear down space inline mods */ 
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    /* display: flex; */
+    padding-bottom: 1em;
+    /* gap: 0.9rem; */
+    /*gap: 1em; not usefull since i disabled the display flex*/
 }
 
-.space-odyssey {
+#fuckoff {
+    background-color: lightgrey;
+    color: grey;
+}
+
+.grid-meister {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  
+    /* max-width: 75vh; */
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+    justify-items: center;
+    text-align: justify;
+}
 
+.grid-meister p {
+    max-width: 75vh;
+    font-size: 1.5rem;
+    /* font-size: 75vh; failed attempt at trying to auto-scale up size of § in text */
 
 }
 
+.pic-pic {
+    max-width: 10vh;
+
+    margin: auto;
+
+    grid-row: 1 / 3;
+    grid-column: 1;
+}
+
+.boxx {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
